@@ -1,0 +1,149 @@
+.wrap{
+width:78.5%;
+height:100%;
+margin: 0 auto;
+}
+
+#sec01{
+    width:100%;
+    height:100%;
+    padding: 5%;
+    /* backdrop-filter: blur(25px);
+    border-radius: 30px; */
+}
+.main_title{
+    font-size: 3.5rem;
+    color:#fff;
+    font-weight: bold;
+    margin-top: 7%;
+    margin-bottom: 7%;
+    backdrop-filter: blur(25px);
+}
+
+.explanation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:5%;
+    padding:2%;
+    border-radius: 80px;
+    backdrop-filter: blur(5px);
+    box-shadow: 1px 1px 10px #fff;
+}
+
+/*h3*/
+.ex1{
+    width:100%;
+    /* height:13%; */
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    background-color: rgb(58, 79, 79);
+    color:#fff;
+}
+
+/*p*/
+.ex2{
+    font-size: 1.5rem;
+    color:#fff;
+    padding:2%;
+    text-align: center;
+    line-height: 170%;
+}
+/* .ex2::before{
+    content: '"';
+    font-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+.ex2::after{
+    content: '"';
+    font-size: 100px;
+    top:10;
+    left:700;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+} */
+/*h4*/
+.sub_title{
+    font-size: 1.9rem;
+    font-weight: bold;
+    color:#fff;
+    margin-top: 7%;
+    margin-bottom: 3%;
+}
+
+/*유튜브를 감싸는 박스*/
+.iframe_box{
+    position: relative;
+    padding-bottom: 56.25%;
+    width:100%;
+    height:0;
+    margin: 0 auto;
+    background-image: url(./img/loading_img.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+iframe{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit: contain;
+}
+
+@media(min-width:300px) {
+    .navbar .links{
+        
+        margin:0 auto; /*links를 화면의 가운데에 배치*/
+    }
+
+    .main_title{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .sub_title{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .ex2{
+        font-size: 1rem;
+    }
+
+}
+
+@media (min-width:734px) {
+
+    .main_title{
+        font-size: 3rem;
+        text-align: center;
+    }
+    .sub_title{
+        font-size: 1.8rem;
+        text-align:left;
+    }
+    .ex2{
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width:993px) {
+    .main_title{
+        font-size: 3.5rem;
+        text-align: left;
+    }
+    .sub_title{
+        font-size: 2rem;
+        text-align:left;
+    }
+    .ex2{
+        font-size: 1.3rem;
+    }
+
+}
