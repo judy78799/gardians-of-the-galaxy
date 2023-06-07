@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin:0;
+        padding: 0;
+        text-decoration: none;
+        list-style: none;
+    }
+
+    header{
+        height:100vh;
+        width:100vw;
+        background-image: url(./img/background.png);
+        background-size: cover;
+    }
+
+    .navbar{
+        position: absolute;
+        padding:50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width:100%;
+        box-sizing: border-box;
+    }
+
+    .navbar a{
+        color:white;
+
+    }
+
+    .navbar .logo{
+        font-size: 2rem;
+        font-weight: bold;
+        
+    }
+
+    .navbar .nav-links ul{
+        display: flex;
+    }
+
+    .navbar .nav-links ul li{
+        margin: 0 25px;
+    }
+
+    .navbar .nav-links ul li.active a{
+        color:rgb(188, 96, 96);
+        font-weight: 600;
+    }
+
+    .navbar .menu-hamburger{
+        width: 35px;
+        position: absolute;
+        top:50px;
+        right:50px;
+        width:35px;
+    }
+    @media screen and (max-width:900px) {
+        .navbar{
+            padding:0;
+        }
+        .nav-links {
+            top:0;
+            left:0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.364);
+            backdrop-filter: blur(7px);
+            width:100%;
+            height:100vh;
+            display: block;
+        }
+        .nav-links ul{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+</style>
+<body>
+    <nav class="navbar">
+        <a href="" class="logo">ADVENTURE</a>
+        <div class="nav-links">
+            <ul>
+                <li class="active"><a href="#">HOME</a></li>
+                <li><a href="#">ADVENTURE</a></li>
+                <li><a href="#">SUPPORT</a></li>
+                <li><a href="#">INFOS</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </div>
+        <img src="" alt="버튼 이미지" class="menu-hamburger">
+    </nav>
+
+    <header>
+    </header>
+</body>
+</html>
